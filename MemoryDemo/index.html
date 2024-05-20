@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Memory Game</title>
+    <meta name="description" content />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/b15cd79f79.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="intro">
+      <div class="head">
+        <h1 class="head-hs">Memory Gamez</h1>
+        <h3 class="head-hs">Are You a True Elden Lord</h3>
+        <span class="play-btn"
+          ><i
+            class="fa-brands fa-react fa-beat-fade"
+            style="color: black"
+          ></i
+        ></span>
+      </div>
+    </div>
+
+    <div class="game-mode">
+      <div class="header">
+        <div class="head">
+          <h1>Memory Game</h1>
+          <p class="score">HighScore: <span>0</span></p>
+        </div>
+        <div class = "board">
+          <div class="score">Score: <span>0</span></div>
+          <div class="score">Move: <span>0</span></div>
+          <button class="restartbtn">Restart</button>
+        </div>
+      </div>
+      
+      <div class="cards">
+        <div class="card-flip" data-card="astel">
+          <div class="card-back"></div>
+          <div class="card-front" >
+            <img src="lords/astel.jpg" />
+          </div>
+        </div>
+        <div class="card-flip"  data-card="dragon">
+          <div class="card-back"></div>
+          <div class="card-front" >
+            <img src="lords/dragonlord.png" />
+          </div>
+        </div>
+        <div class="card-flip" data-card="godrick">
+          <div class="card-back"></div>
+          <div class="card-front" >
+            <img src="lords/godrick.jpg" />
+          </div>
+        </div>
+        <div class="card-flip" data-card="hoarah">
+          <div class="card-back"></div>
+          <div class="card-front" >
+            <img src="lords/hoarah.png" />
+          </div>
+        </div>
+        <div class="card-flip" data-card="maliketh">
+          <div class="card-back"></div>
+          <div class="card-front" >
+            <img src="lords/maliketh.png" />
+          </div>
+        </div>
+        <div class="card-flip"  data-card="margit">
+          <div class="card-back"></div>
+          <div class="card-front">
+            <img src="lords/margit.jpg" />
+          </div>
+        </div>
+        <div class="card-flip" data-card="melenia">
+          <div class="card-back"></div>
+          <div class="card-front" >
+            <img src="lords/melenia.png" />
+          </div>
+        </div>
+        <div class="card-flip" data-card="redwolf">
+            <div class="card-back"></div>
+            <div class="card-front" >
+              <img src="lords/redwolf.jpg" />
+            </div>
+          </div>
+          <div class="card-flip"  data-card="astel">
+            <div class="card-back"></div>
+            <div class="card-front" >
+              <img src="lords/astel.jpg" />
+            </div>
+          </div>
+          <div class="card-flip" data-card="dragon">
+            <div class="card-back"></div>
+            <div class="card-front" >
+              <img src="lords/dragonlord.png" />
+            </div>
+          </div>
+          <div class="card-flip" data-card="godrick">
+            <div class="card-back"></div>
+            <div class="card-front" >
+              <img src="lords/godrick.jpg" />
+            </div>
+          </div>
+          <div class="card-flip" data-card="hoarah">
+            <div class="card-back"></div>
+            <div class="card-front" >
+              <img src="lords/hoarah.png" />
+            </div>
+          </div>
+          <div class="card-flip"  data-card="maliketh">
+            <div class="card-back"></div>
+            <div class="card-front">
+              <img src="lords/maliketh.png" />
+            </div>
+          </div>
+          <div class="card-flip" data-card="margit">
+            <div class="card-back"></div>
+            <div class="card-front" >
+              <img src="lords/margit.jpg" />
+            </div>
+          </div>
+        <div class="card-flip" data-card="melenia">
+          <div class="card-back"></div>
+          <div class="card-front" >
+            <img src="lords/melenia.png" />
+          </div>
+        </div>
+        <div class="card-flip" data-card="redwolf">
+          <div class="card-back"></div>
+          <div class="card-front" >
+            <img src="lords/redwolf.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="end">
+      <div class="congrats">
+        <h1 class="end-h1">You are a true Elden Lord!!</h1>
+        <button class="endbtn" onclick="window.location.reload()">Home</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
