@@ -1,9 +1,17 @@
+// 1. SELECTORS//
+// These elements represent different sections of the game: introduction, game mode, play button, and end screen, respectively.
+
+
+
 const intro = document.querySelector(".intro");
 const gamemode = document.querySelector(".game-mode");
 let playbtn = document.querySelector(".play-btn");
 let lockBoard = false; 
 const end = document.querySelector('.end');
 
+// 2. DOMContentLoaded Event:
+// When the DOM content is fully loaded, the code sets the initial display of the intro, game mode, and end sections.
+//It retrieves the high score from local storage and updates the score display accordingly.
 
 document.addEventListener("DOMContentLoaded", function () {
   intro.style.display = "block";
@@ -19,6 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// 3. Play Button Click Event:
+
+// When the play button is clicked, the game mode section is displayed while the intro section is hidden.
+
 playbtn.addEventListener("click", function (e) {
   gamemode.style.display = "flex";
   intro.style.display = "none";
@@ -32,7 +44,12 @@ function move(){
   score[2].innerText = moveCount;
 }
 
-
+// 4. Card Click Event:
+// When a card is clicked (flipCard function), it flips if the board is not locked (no more than two cards flipped).
+// It checks whether it's the first or second card clicked and stores them accordingly.
+// If two cards are flipped, it compares their data-card attributes.
+// If they match, their event listeners are removed, and the score is updated.
+// If not, the board is locked temporarily, and after a delay, the cards are flipped back.
 
 function flipCard() {
   if (lockBoard) return; // Don't flip if more than 2 cards are already flipped
@@ -90,6 +107,15 @@ function flipCard() {
 for (let i = 0; i < cards.length; i++) {
   cards[i].addEventListener("click", flipCard);
 }
+
+// 5. Restart Button Click Event:
+
+// When the restart button is clicked, the following actions are performed:
+// Flipped cards are cleared.
+// Event listeners for card clicks are reattached.
+// Cards are shuffled.
+// Scores are reset, and move count is set to zero.
+
 
 document.querySelector(".restartbtn").addEventListener("click", function () {
   // Clear the flipped cards

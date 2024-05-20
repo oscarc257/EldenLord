@@ -1,4 +1,7 @@
 body {
+
+    /* Sets padding and margin to 0 to remove any default spacing.
+Sets the height to 100vh (viewport height), ensuring that the background covers the entire viewport. */
     padding: 0;
     margin: 0;
     height: 100vh;
@@ -6,12 +9,14 @@ body {
 * Created with https://www.css-gradient.com
 * Gradient link: https://www.css-gradient.com/?c1=202471&c2=f0cd87&gt=l&gd=dtl
 */
+/* Defines a gradient background using the linear-gradient function, starting from a dark blue color (rgba(32, 36, 113, 1.0)) and ending with a light beige color (rgba(240, 205, 135, 1.0)). */
+
 background: rgba(32, 36, 113, 1.0);
 background: linear-gradient(135deg, rgba(32, 36, 113, 1.0), rgba(240, 205, 135, 1.0));
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
+    display: flex; /*Uses Flexbox to center the content vertically and horizontally. */
     justify-content: center;
     align-items: center;
     font-family: "Yantramanav", sans-serif;
@@ -29,6 +34,7 @@ background: linear-gradient(135deg, rgba(32, 36, 113, 1.0), rgba(240, 205, 135, 
     padding: 20px;
     text-align: center;
     height: 30%;
+    /* Hides the element initially (display: none;). */
     display: none;
     text-shadow: rgb(120, 174, 197) 2px 0 18px;
     
